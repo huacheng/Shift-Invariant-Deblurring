@@ -1,6 +1,6 @@
 %---------------------------------------------------------%
 %  This program implement shift-invariant Deblurring  %
-%         Common Creative(CC) Hua Cheng, 2011             %
+%         Creative Commons(CC) Hua Cheng, 2011             %
 %---------------------------------------------------------%
 
 close all;
