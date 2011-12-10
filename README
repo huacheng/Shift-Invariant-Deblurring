@@ -23,7 +23,7 @@ Documentation:
 
 Data Flow:
     The details of data flow of the deblur.m is written on my SR.pdf document
-    in English see Algorithm 1 and Algorithm 2 of SR.pdf.
+    in English, see the Algorithm 1 and the Algorithm 2 of SR.pdf.
     
     Here I am going to talk about How do I make use of Prona(17),Osher(18),
     Xu(16) and Shan(13)'s result.
