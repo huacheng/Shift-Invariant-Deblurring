@@ -40,7 +40,7 @@ Data Flow:
     <<< Second >>>:
         After the pre-preprocess, the image will be preprocessed by the Shock 
     Filter(Osher(18)), and then starting the First Phase Kernel Estimation of the 
-    Two Phase Process according to the idea of Xu(16).
+    Two Phase Processes according to the idea of Xu(16).
     
     I call the First Phase Kernel Estimation as the Coarse Kernel Estimation,
     which is implemented as coarse_kernel_est.m function.Before the image 
