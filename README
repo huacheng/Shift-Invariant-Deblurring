@@ -11,19 +11,19 @@ The Program goes as follow:
 Running:
     deblur.m
 
-    There are some test image at the img directory
+    There are some test images at the img/ directory
 --------------------------------------------------------------------------------
 
 Documentation:
-    I have the Chinese Documentation ONLY, and I not going to transcipt
-    it into English,cause I have no time. If you are not familar with
-    Chinese, you can read the Prona(17),Osher(18),Xu(16) and Shan(13),
-    which are listed on my Reference of SR.pdf.
+    I have the Chinese Documentation ONLY, and I not going to translate
+    it into English,cause I have no time and it makes no sense. If you 
+    are not familar with Chinese, you can read the Prona(17),Osher(18),
+    Xu(16) and Shan(13),which are listed on my Reference of SR.pdf.
 --------------------------------------------------------------------------------
 
 Data Flow:
-    The details of data flow of the deblur is writed on my SR.pdf document
-    in English see Algorithm 1 and Algorithm 2.
+    The details of data flow of the deblur.m is written on my SR.pdf document
+    in English see Algorithm 1 and Algorithm 2 of SR.pdf.
     
     Here I am going to talk about How do I make use of Prona(17),Osher(18),
     Xu(16) and Shan(13)'s result.
@@ -31,20 +31,20 @@ Data Flow:
     <<< First >>>:
         A blurred image I is processed Non-Linear Deffusion(NLD),which is 
     the work of Prona(17). The NLD will reduce the noise signals, but 
-    pretect the sharp edge. Because,the Shock Filter(Osher(18)) is sensitive
-    with noise, that's why I use NLD before Shock Filter processing. You can 
-    find the similar IDEA in work of Cho(11),Xu(16) or may be some one else.
+    protect the sharp edges. Because of the Shock Filter(Osher(18)) is sensitive
+    to noise, that's why I use NLD before Shock Filter processing. You can 
+    find the similar IDEA in the works of Cho(11),Xu(16) or some one else.
    
     I call this process a pre-preprocess.(^!^)
 
     <<< Second >>>:
-        After the pre-preprocess, the image will be preprocessed by Shock 
-    Filter(Osher(18)), and start the First Phase Kernel Estimation of the 
+        After the pre-preprocess, the image will be preprocessed by the Shock 
+    Filter(Osher(18)), and then starting the First Phase Kernel Estimation of the 
     Two Phase Process according to the idea of Xu(16).
     
     I call the First Phase Kernel Estimation as the Coarse Kernel Estimation,
     which is implemented as coarse_kernel_est.m function.Before the image 
-    processed coarse_kernel_est.m, it is processed by H_compute.m and M_compute.m
+    processed by coarse_kernel_est.m, it is processed by H_compute.m and M_compute.m
     function.
 
     On the Second Phase Kernel Estimation, also known as Iterative Surpport 
@@ -53,13 +53,13 @@ Data Flow:
     get any improvement.So I comment the code in my deblur.m and havn't designed
     a refine_kernel_est.m function file.
     
-    If any one wants to try the ISD idea, you are free to use my half-baked code. 
-    If you get any improvement based my "code", it's my honor! And if you are 
+    If any one who wants to try the ISD idea, you are free to use my half-baked code. 
+    If you get any improvement based on my "code", it's my honor! And if you are 
     willing to email me your baked code, thank you very much. <^!^>
 
     <<< At Last >>>:
         The image was deconvoluted by Shan(13)'s Deconvolution Algorithm,known as 
-    multi_deriv_deconv.m function in my Program.
+    multi_deriv_deconv.m function in my deblur.m.
 -------------------------------------------------------------------------------------
 
 Good Luck, Hope you enjoy it!{^!^}
