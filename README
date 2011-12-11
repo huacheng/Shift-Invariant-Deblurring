@@ -35,7 +35,7 @@ Data Flow:
     to noise, that's why I use NLD before Shock Filter processing. You can 
     find the similar IDEA in the works of Cho(11),Xu(16) or some one else.
    
-    I call this process a pre-preprocess.(^!^)
+        I call this process a pre-preprocess.(^!^)
 
     <<< Second >>>:
         After the pre-preprocess, the image will be preprocessed by the Shock 
