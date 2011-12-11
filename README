@@ -42,18 +42,18 @@ Data Flow:
     Filter(Osher(18)), and then starting the First Phase Kernel Estimation of the 
     Two Phase Processes according to the idea of Xu(16).
     
-    I call the First Phase Kernel Estimation as the Coarse Kernel Estimation,
+        I call the First Phase Kernel Estimation as the Coarse Kernel Estimation,
     which is implemented as coarse_kernel_est.m function.Before the image 
     processed by coarse_kernel_est.m, it is processed by H_compute.m and M_compute.m
     function.
 
-    On the Second Phase Kernel Estimation, also known as Iterative Surpport 
+        On the Second Phase Kernel Estimation, also known as Iterative Surpport 
     Detection(ISD) Kernel Refinement.I have to say that I am failed to implement 
     the idea of ISD, when I was using the commented code of ISD part, I can't 
     get any improvement.So I comment the code in my deblur.m and havn't designed
     a refine_kernel_est.m function file.
     
-    If any one who wants to try the ISD idea, you are free to use my half-baked code. 
+        If any one who wants to try the ISD idea, you are free to use my half-baked code. 
     If you get any improvement based on my "code", it's my honor! And if you are 
     willing to email me your baked code, thank you very much. <^!^>
 
